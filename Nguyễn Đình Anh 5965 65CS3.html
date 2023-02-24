@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+    table, th {
+        border-style: double;
+    }
+    .tdtab{
+        text-align:right
+    }
+    </style>
+    
+    <script>
+       
+    </script>
+    
+</head>
+<body>
+    
+    <form name="form1">
+        <table width=500px>
+            <tr>
+              <th colspan="2" style="background-color:black ;"><h2><a style="color:white">ADDNEW PRODUCTION</a></h2></th>
+            </tr>
+            <tr>
+              <td class="tdtab">Category Choose:</td>
+              <td>
+                <select name="category" id="category">
+                    <option >Nokia</option>
+                    <option >Samsung</option>
+                    <option >GL</option>
+                    <option >Sony</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="tdtab">Product Name:</td>
+              <td><input type="text" style="width:190px; margin-right: 15px;"></td>
+            </tr>
+            
+            <tr>
+                <td class="tdtab">Product Description:</td>
+                <td><textarea name="" id="" cols="25" rows="3"></textarea></td>
+            </tr>
+
+            <tr>
+                <td class="tdtab">Product Quantity:</td>
+                <td><input type="text" style="width:150px; margin-right: 14px;"><label style="color:red" >(positive)</label></td>
+            </tr>
+
+            <tr>
+                <td class="tdtab">Product Price:</td>
+                <td><input type="text" style="width:135px; margin-right: 10px;"><label style="color:red" >($)</label></td>
+            </tr>
+
+            <tr>
+                <td class="tdtab">Product Image:</td>
+                <td><input type="text" style="width:140px; margin-right: 13px;"></td>
+            </tr>
+
+            <tr>
+                <td class="tdtab">Product Info:</td>
+                <td>
+                    <textarea name="" id="" cols="25" rows="5">Enter your Product Info...</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdtab">Product Status:</td>
+                <td>
+                    <input type="checkbox"><label>Show</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="Reset">
+
+                </td>
+            </tr>
+
+        </table>
+        </form>
+
+</body>
+</html>

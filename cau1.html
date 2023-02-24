@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> bai 1</title>
+        <style>
+            h1 {
+                size: 14;
+                color: blue;
+            }
+            h1:hover {
+                color: yellow;
+            }
+            .bt {
+                color: yellow;
+                background-color: green;
+            }
+            p {
+                size: 6;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="f">
+        <h1> HN - Aptech Registration Form</h1>
+        <p> Which subject would you like to learn ?</p>
+        <input type="checkbox" name="java" id="j"> java
+        <br>
+        <input type="checkbox" name="html" id="h"> HTML
+        <br>
+        <input type="checkbox" name="net" id="n"> Net
+        <br>
+        <input type="checkbox" name="sql" id="s"> NQL
+        <br>
+        <p> Where do you want to study at ?</p>
+        <input type="radio" name="1" id="1"> 56 Nguyen Chi Thanh
+        <br>
+        <input type="radio" name="2" id="2"> 19 Nguyen Trai
+        <P> Your Email address: <input type="text" name="txtEmail"></P> 
+        <input type="submit" class = "bt" value="Register" onclick="return check()">
+        <script>
+            function check(){
+                    with (document){
+                        if (f.txtEmail.value==""){
+                            alert("Please input Email!");
+                            f.txtEmail.focus();
+                            return false;
+                        }
+                        r = /^\w+\@+\w$/
+                        if (r.test(f.txtEmail.value)==false){
+                            alert("Email must have @");
+                            f.txtEmail.focus();
+                            return false;
+                        }
+                    }
+                    alert("Register successfully!!");
+                }
+        </script>
+        </form>
+    </body>
+</html>
